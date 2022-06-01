@@ -1,0 +1,19 @@
+.image {
+    margin: 10px auto;
+    display: flex;
+}
+
+.more-detail {
+    padding: 10px;
+    margin: 10px;
+    line-height: 50px;
+}
+
+.more-detail .title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.more-detail .value {
+    font-size: 30px;
+    font-weight: 500;
+}

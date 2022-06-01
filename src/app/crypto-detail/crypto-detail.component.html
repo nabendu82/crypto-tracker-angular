@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col">
+                <img class="image" [src]="cryptoData?.image?.large" alt="">
+                <h3 class="text-center" style="font-size: 23px;">{{cryptoData?.name}}</h3>
+                <h2 class="text-center" [innerHtml]="cryptoData?.description?.en.split('. ')[0]"></h2>
+                <div class="more-detail text-center">
+                    <span class="title">Rank: </span> <span class="value">{{cryptoData?.market_cap_rank}}</span><br>
+                    <span class="title">Current Price: </span> <span class="value">{{cryptoData?.market_data.current_price.inr | currency: currency}}</span><br>
+                    <span class="title">Market Cap: </span> <span class="value">{{cryptoData?.market_data.market_cap.inr | currency:currency}}</span>
+                </div>
+        </div>
+    </div>
+</div>
